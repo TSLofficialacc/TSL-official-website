@@ -4,7 +4,29 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
    <div class="banner">
+      <button onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=1146798018008465448&redirect_uri=https%3A%2F%2Fazimahal5131.github.io%2FTSL-official-website%2F&response_type=code&scope=identify'" class="dclogbut">Log in</button>
+      <script>
+         window.onload = () => {
+            const fragment = new URLSearchParams(window.location.hash.slice(1));
+            const [accessToken, tokenType] = [fragment.get('access_token'), fragment.get('token_type')];
+      
+
+            }
+      
+            fetch('https://discord.com/api/users/@me', {
+               headers: {
+                  authorization: `${tokenType} ${accessToken}`,
+               },
+            })
+               .then(result => result.json())
+               .then(response => {
+                  const { username, discriminator } = response;
+                  document.getElementById('info').innerText += ` ${username}#${discriminator}`;
+               })
+               .catch(console.error);
+      </script> 
       <div class="middle">
       <p class="text2"><strong>Discord server</strong></p>
       
