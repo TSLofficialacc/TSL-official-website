@@ -1,0 +1,115 @@
+.banner {
+    height: 100%;
+    background-image: url("background.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+.text1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    background-color: black;
+}
+.middle {
+    background-color: white;
+    width: 800px;
+    height: 480px;
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin-left: 550px;
+    margin-top: 10%;
+    border-radius: 140px;
+}
+.discordbut {
+    background-image: url("button.jpeg");
+    background-position: center;
+    font-size: 50px;
+    width: 400px;
+    border-radius: 50px;
+    height: 100px;
+    margin-top: -40px;
+    cursor: pointer;
+    transition: transform 1s;
+    transition: background-image 1s;
+}
+.discordbut:hover {
+    transform: scale(1.3);
+}
+.discordbut:active {
+    background-image: none;
+}
+
+
+
+
+
+
+.text2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: -5px;
+}
+.text3 {
+    font-size: 50px;
+    text-align: center;
+}
+.youtubebut {
+    background-image: url("button2.png");
+    background-position: center;
+    font-size: 50px;
+    width: 400px;
+    border-radius: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: auto;
+    cursor: pointer;
+    margin-top: -30px;
+    transition: transform 1s;
+    transition: background-image 1s;
+}
+.youtubebut:hover {
+    transform: scale(1.3);
+}
+.youtubebut:active {
+    background-image: none;
+}
+.totw {
+    background-size: cover;
+    background-image: url(background.png);
+    background-position: center;
+    width: 100%;
+    height: 1100px;
+    margin-top: -240px;
+    background-repeat: repeat;
+}
+.totwmiddle {
+    background-color: whitesmoke;
+    width: 620px;
+    height: 980px;
+    background-size: contain;
+    margin-left: 640px;
+    margin-bottom: 100px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.totwtext {
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 55px;
+    text-align: center;
+    margin-top: -6px;
+}
+.image {
+    width : 800px;
+    height: 900px;
+    background-image: url(totw);
+    background-size: contain;
+    background-position: center;
+    margin-top: -50px;
+    background-repeat: no-repeat;
+    margin-left: -90px;
+}
